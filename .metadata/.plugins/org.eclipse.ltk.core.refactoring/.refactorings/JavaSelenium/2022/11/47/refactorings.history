@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 6 elements to &apos;jars&apos;&#x0D;&#x0A;- Original project: &apos;JavaSelenium&apos;&#x0D;&#x0A;- Destination element: &apos;jars&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     commons-io-2.11.0.jar&#x0D;&#x0A;     testng-7.4.0.jar&#x0D;&#x0A;     poi-ooxml-5.2.2.jar&#x0D;&#x0A;     selenium-server-4.1.3.jar&#x0D;&#x0A;     poi-5.2.2.jar&#x0D;&#x0A;     webdrivermanager-5.2.0.jar" description="Copy files" element1="jars/commons-io-2.11.0.jar" element2="jars/testng-7.4.0.jar" element3="jars/poi-ooxml-5.2.2.jar" element4="jars/selenium-server-4.1.3.jar" element5="jars/poi-5.2.2.jar" element6="jars/webdrivermanager-5.2.0.jar" files="6" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1668863220837" target="/swaglab/jars" units="0" version="1.0"/>
+</session>

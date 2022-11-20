@@ -1,0 +1,24 @@
+package methodsofwebelement;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class UsageOfClickWithDefaultScrollingAbility {
+	static String mainUrl = "https://www.facebook.com/";
+	public static void main(String[] args) throws Throwable {
+		//Set driver executable path
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+		//Instantiate the browser specific class
+		WebDriver driver=new ChromeDriver();
+		//Maximize the window
+		driver.manage().window().maximize();
+		//Pass the main url
+		driver.get(mainUrl);
+		//Find target element on browser window and click on it
+		//Click has default scrolling ability 
+		driver.findElement(By.linkText("Instagram")).click();
+		Thread.sleep(5000);
+		driver.quit();
+	}
+}

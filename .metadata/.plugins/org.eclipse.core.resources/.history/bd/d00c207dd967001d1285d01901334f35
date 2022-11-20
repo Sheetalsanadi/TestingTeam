@@ -1,0 +1,26 @@
+package swaglab;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class FacebookLoginPage {
+	static String url = "https://www.facebook.com/";
+public static void main(String[] args) {
+	System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
+	WebDriver driver = new ChromeDriver();
+	driver.manage().window().maximize();
+	driver.get(url);
+	WebElement usernametextfield = driver.findElement(By.id("email"));
+	WebElement password = driver.findElement(By.id("pass"));
+	int usernamegettext = usernametextfield.getLocation().getZ();
+	int passwordtext = password.getLocation().getY();
+	if (usernamegettext==passwordtext) {
+		System.out.println("Both textfield size same");
+	} else {
+		System.out.println("Both textfield size not same");
+	}
+	
+}
+}
